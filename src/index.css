@@ -175,7 +175,7 @@ input:checked + label .stars svg{
 .active{
   position: fixed;
   bottom: 10px;
-  left: 0px;
+  left: 10px;
   box-shadow: 10px 5px 5px black;
   
 }
