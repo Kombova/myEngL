@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <BackgoundButton/>
-    <div className='max-w-[1300px] mx-auto border bg-slate-100'>
+    <div className='max-w-[1000px] mx-auto rounded-t-[10px] bg-slate-100 wrap'>
       <Header selectNow={selectMenu} select={setSelectMenu}/>
       <main className='w-full pb-[40px] px-[10px]' >
         {selectMenu === 'PersonalPronouns' ? <PersonalPronouns/> : null}

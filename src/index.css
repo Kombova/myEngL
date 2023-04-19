@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  transition: 1s;
 }
 
 code {
@@ -177,6 +178,13 @@ input:checked + label .stars svg{
   left: 0px;
   box-shadow: 10px 5px 5px black;
   
+}
+
+body:has(input:checked){  background: rgb(92, 83, 83);
+  
+}
+input:checked + .wrap .header {
+  background-color: #393646;
 }
 
 

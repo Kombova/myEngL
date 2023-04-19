@@ -1,6 +1,9 @@
 const BackgoundButton = () =>{
+    
+    
     return(
-        <div className="container_toggle">
+        <>
+        
             <input id='toggle' type="checkbox"/>
             <label id='lav' className='active' for="toggle">
                 <div className='cook'>
@@ -70,8 +73,9 @@ const BackgoundButton = () =>{
                 </svg>
                 </div>
             </label>
+        </>
 
-        </div>
+       
 
         
     )
