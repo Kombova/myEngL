@@ -183,15 +183,15 @@ input:checked + label .stars svg{
 body:has(input:checked){  background: rgb(92, 83, 83);
   
 }
-input:checked + .wrap .header {
-  background-color: #393646;
-}
+
 
 
 @media screen and (max-width: 600px){
   .active{
     width: 100px;
     height: 40px;
+    bottom: 8px;
+    left:5px;
   }
   input:checked + label .clouds svg{
     transform: translate(10px, 10px);
