@@ -5,8 +5,8 @@ const Header = ({selectNow,select}) =>{
             
             <nav className="h-full w-full">
                 <ul className="h-full w-full max-w-full border   flex justify-center gap-[20px] items-center flex-grow  text-center text-fuchsia-100  text-[20px]  list-none">
-                    <li className={`after:content-none before:content-none  rounded-xl p-[10px] ${selectNow == 'PersonalPronouns' ? selectClass : null}`}><button onClick={(e)=>select(e.target.value) } value='PersonalPronouns'>Личные местоимения</button></li>
-                    <li className={`after:content-none before:content-none  rounded-xl p-[10px] ${selectNow == 'Plural' ? selectClass : null}`}><button onClick={(e)=>select(e.target.value) } value='Plural'>Множественное число</button></li>
+                    <li className={`after:content-none before:content-none  rounded-xl p-[10px] ${selectNow === 'PersonalPronouns' ? selectClass : null}`}><button onClick={(e)=>select(e.target.value) } value='PersonalPronouns'>Личные местоимения</button></li>
+                    <li className={`after:content-none before:content-none  rounded-xl p-[10px] ${selectNow === 'Plural' ? selectClass : null}`}><button onClick={(e)=>select(e.target.value) } value='Plural'>Множественное число</button></li>
                 </ul>
             </nav>
         </header>
