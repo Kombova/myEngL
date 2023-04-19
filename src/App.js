@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
 
+import { useState } from 'react';
+import './App.css';
+import Header from './components/Header';
+import PersonalPronouns from './components/PersonalPronouns';
+import Plural from './components/Plural';
 function App() {
+  const[selectMenu,setSelectMenu]=useState('PersonalPronouns');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='max-w-[1300px] mx-auto border bg-slate-100'>
+      <Header selectNow={selectMenu} select={setSelectMenu}/>
+      <main className='w-full pb-[40px] px-[10px]' >
+        {selectMenu === 'PersonalPronouns' ? <PersonalPronouns/> : null}
+        {selectMenu === 'Plural' ? <Plural/> : null}
+      </main>
     </div>
   );
 }
